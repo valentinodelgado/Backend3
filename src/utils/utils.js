@@ -17,7 +17,7 @@ const generarUsuarios = () =>{
     const roles = ["user", "admin"]
     return {
         first_name:faker.person.firstName()  ,
-        last_name:faker.person.lastName ,
+        last_name:faker.person.lastName() ,
         email:faker.internet.email() ,
         password: createHash("coder123"),
         role: roles[Math.floor(Math.random() * roles.length)],
